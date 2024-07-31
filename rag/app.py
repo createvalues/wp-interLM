@@ -4,7 +4,7 @@ from llama_index.core import VectorStoreIndex, SimpleDirectoryReader, Settings, 
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 from llama_index.llms.huggingface import HuggingFaceLLM
 
-st.set_page_config(page_title="llama_index_RAG_interLMchat-1.8b", page_icon="🦜🔗")
+st.set_page_config(page_title="llama_index_RAG_interLMchat-7b", page_icon="🦜🔗")
 st.title("llama_index_demo")
 
 # 初始化模型
@@ -16,18 +16,18 @@ def init_models():
     Settings.embed_model = embed_model
 
     llm = HuggingFaceLLM(
-        model_name="/root/models/internlm2-chat-1_8b",
-        tokenizer_name="/root/models/internlm2-chat-1_8b",
+        model_name="/root//wp-interLM/lora/XTuner/merged",
+        tokenizer_name="/root//wp-interLM/lora/XTuner/merged",
         model_kwargs={"trust_remote_code": True},
         tokenizer_kwargs={"trust_remote_code": True}
     )
     Settings.llm = llm
 
-    documents = SimpleDirectoryReader("/root/llamaindex/data").load_data()
-    index = VectorStoreIndex.from_documents(documents)
-    # # 从存储文件中读取embedding向量和向量索引
-    # storage_context = StorageContext.from_defaults(persist_dir="./doc_emb")
-    # index = load_index_from_storage(storage_context)
+    # documents = SimpleDirectoryReader("/root/llamaindex/data").load_data()
+    # index = VectorStoreIndex.from_documents(documents)
+    # 从存储文件中读取embedding向量和向量索引
+    storage_context = StorageContext.from_defaults(persist_dir="./doc_emb")
+    index = load_index_from_storage(storage_context)
     query_engine = index.as_query_engine()
 
     return query_engine
@@ -43,7 +43,7 @@ def greet2(question):
       
 # Store LLM generated responses
 if "messages" not in st.session_state.keys():
-    st.session_state.messages = [{"role": "assistant", "content": "你好，我是你的助手，有什么我可以帮助你的吗？"}]    
+    st.session_state.messages = [{"role": "assistant", "content": "我是你的医疗小助手，有什么可以帮助你的吗？"}]    
 
     # Display or clear chat messages
 for message in st.session_state.messages:
@@ -51,7 +51,7 @@ for message in st.session_state.messages:
         st.write(message["content"])
 
 def clear_chat_history():
-    st.session_state.messages = [{"role": "assistant", "content": "你好，我是你的助手，有什么我可以帮助你的吗？"}]
+    st.session_state.messages = [{"role": "assistant", "content": "我是你的医疗小助手，有什么可以帮助你的吗？"}]
 
 st.sidebar.button('Clear Chat History', on_click=clear_chat_history)
 
