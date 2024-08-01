@@ -20,15 +20,18 @@
 </p>
 
 
- 本篇README.md面向开发者
+本项目以interLM-chat-7b为基座模型。结合华妃任务模板数据集+lora微调实现角色扮演。并在兼顾效率和质量的情况下，采用检索增强生成（Retrieval Augmented Generation，RAG）技术更新模型知识库。最后采用LMDeploy框架量化部署，大幅降低模型显存占用。
+<br />
+<p align="center">
+<a href="https://github.com/createvalues/wp-interLM/">
+    <img src="images/框架.png" alt="kuangjia" width="60" height="30">
+</a>
+</p>
  
 ## 目录
 
-- [上手指南](#上手指南)
-  - [开发前的配置要求](#开发前的配置要求)
-  - [安装步骤](#安装步骤)
-- [文件目录说明](#文件目录说明)
-- [开发的架构](#开发的架构)
+- [环境配置](#环境配置)
+- [运行演示](#运行演示)
 - [部署](#部署)
 - [使用到的框架](#使用到的框架)
 - [贡献者](#贡献者)
@@ -37,31 +40,33 @@
 - [作者](#作者)
 - [鸣谢](#鸣谢)
 
-### 上手指南
+### 环境配置
 
+```
+conda create -n llamaindex python=3.10
+conda activate llamaindex
+conda install pytorch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 pytorch-cuda=11.7 -c pytorch -c nvidia
+# 以下命令安装llama-index依赖包
+pip install llama-index==0.10.38 llama-index-llms-huggingface==0.2.0 "transformers[torch]==4.41.1" "huggingface_hub[inference]==0.23.1" huggingface_hub==0.23.1 sentence-transformers==2.7.0 sentencepiece==0.2.0
+# 安装streamlit用于网页交互
+pip install streamlit==1.36.0
+```
 
+### 运行演示
 
-###### 开发前的配置要求
-
-1. xxxxx x.x.x
-2. xxxxx x.x.x
-
-###### **安装步骤**
-
-
-### 文件目录说明
-
-
-### 部署
-
-暂无
+进入rag文件下，运行app.py即可开始对话。
+<br />
+<p align="center">
+<a href="https://github.com/createvalues/wp-interLM/">
+    <img src="images/yanshi.png" alt="yanshi" width="300" height="300">
+</a>
+</p>
 
 ### 使用到的框架
 
+interLM2,XTuner,LlamaIndex,lmdEPLOY
 
 ### 贡献者
-
-请阅读**CONTRIBUTING.md** 查阅为该项目做出贡献的开发者。
 
 #### 如何参与开源项目
 
@@ -73,8 +78,6 @@
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
-
-
 
 ### 版本控制
 
