@@ -2,7 +2,7 @@
 
 # 寻医生活小助理😊
 
-在日常生活中，我们难免会有一些身体上的不舒服，但是又觉得为这些小问题去医院太费时费力。本项目旨在打造一款基于interLM的身体情况分析问诊助手，帮你第一时间分析病情病理，并尝试给出一些就诊建议，方便日常生活。
+在日常生活中，我们难免会有一些身体上的不舒服，但是又觉得为这些小问题去医院太费时费力。本项目基于interLM-char-7b模型，旨在打造一款用于身体健康管理和疾病咨询的生活小助手，帮你第一时间分析身体情况和病情症状，并尝试给出一些就诊建议，方便日常生活。
 <!-- PROJECT SHIELDS -->
 
 <!-- PROJECT LOGO -->
@@ -10,7 +10,7 @@
 
 <p align="center">
   <a href="https://github.com/shaojintian/Best_README_template/">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="[logo.png](https://img.51miz.com/preview/element/00/01/12/70/E-1127054-6415A1B5.jpg)" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">"寻医生活小助理😊</h3>
