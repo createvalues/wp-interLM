@@ -9,8 +9,9 @@
 <br />
 
 <p align="center">
-  ![E-1127054-6415A1B5](https://img.51miz.com/preview/element/00/01/12/70/E-1127054-6415A1B5.jpg)
-
+  <a href="https://github.com/createvalues/wp-interLM/">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a>
   <h3 align="center">"寻医生活小助理😊</h3>
   <p align="center">
     寻医生活小助理😊，加速你的生活！
