@@ -9,7 +9,7 @@
 <br />
 
 <p align="center">
-  <img src="[logo](https://img.51miz.com/preview/element/00/01/12/70/E-1127054-6415A1B5.jpg)" alt="Logo" width="80" height="80">
+  ![logo](https://img.51miz.com/preview/element/00/01/12/70/E-1127054-6415A1B5.jpg)
 
   <h3 align="center">"寻医生活小助理😊</h3>
   <p align="center">
