@@ -10,7 +10,7 @@
 
 <p align="center">
   <a href="https://github.com/createvalues/wp-interLM/">
-    <img src="doc/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/doc.png" alt="Logo" width="100" height="100">
   </a>
   <h3 align="center">"寻医生活小助理😊</h3>
   <p align="center">
@@ -24,7 +24,7 @@
 <br />
 <p align="center">
 <a href="https://github.com/createvalues/wp-interLM/">
-    <img src="images/框架.png" alt="kuangjia" width="600" height="300">
+    <img src="images/框架.png" alt="kuangjia" width="1000" height="500">
 </a>
 </p>
  
@@ -58,7 +58,7 @@ pip install streamlit==1.36.0
 <br />
 <p align="center">
 <a href="https://github.com/createvalues/wp-interLM/">
-    <img src="images/yanshi.png" alt="yanshi" width="400" height="400">
+    <img src="images/yanshi.png" alt="yanshi" width="550" height="440">
 </a>
 </p>
 
