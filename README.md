@@ -9,9 +9,7 @@
 <br />
 
 <p align="center">
-  <a href="https://github.com/shaojintian/Best_README_template/">
-    <img src="[logo.png](https://img.51miz.com/preview/element/00/01/12/70/E-1127054-6415A1B5.jpg)" alt="Logo" width="80" height="80">
-  </a>
+  <img src="[logo](https://img.51miz.com/preview/element/00/01/12/70/E-1127054-6415A1B5.jpg)" alt="Logo" width="80" height="80">
 
   <h3 align="center">"寻医生活小助理😊</h3>
   <p align="center">
